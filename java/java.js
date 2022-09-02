@@ -11,14 +11,14 @@ input.addEventListener('keypress', function(e) {
 });
 
 const addItemInput = document.querySelector('#addItem');
-const itemsUL = document.querySelector('#items');
+const itemsOL = document.querySelector('#items');
 
 addItemInput.addEventListener('keypress', function(e) {
    if(e.key === 'Enter') {
       const newItemText = this.value;
       const newItem = document.createElement('li');
       newItem.innerText = newItemText;
-      itemsUL.appendChild(newItem);
+      itemsOL.appendChild(newItem);
       this.value = '';
    }
 });
